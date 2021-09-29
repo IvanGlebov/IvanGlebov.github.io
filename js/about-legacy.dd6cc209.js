@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkvuetodo"]=self["webpackChunkvuetodo"]||[]).push([[443],{7483:function(u,n,e){e.r(n),e.d(n,{default:function(){return f}});var t=e(6252),a={class:"about"},r=(0,t._)("h1",null,"This is an about page",-1),o=[r];function s(u,n){return(0,t.wg)(),(0,t.iD)("div",a,o)}var c=e(3744);const i={},d=(0,c.Z)(i,[["render",s]]);var f=d}}]);
-//# sourceMappingURL=about-legacy.dd6cc209.js.map
