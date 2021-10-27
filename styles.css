@@ -1,0 +1,279 @@
+:root {
+    --main-text-color: white;
+}
+
+html, body {
+    transition: all .5s;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+    color: var(--main-text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.slideContainer {
+    height: 100vh;
+    padding: 50px 50px 0;
+
+}
+
+.mainBackground {
+    background-image: url('./assets/backgroundCrop.png');
+    /* background-size: calc(100vw); */
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secondaryBackground {
+    background-image: url('./assets/secondaryBackgroundCrop.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: bottom;
+    color: black;
+    transition: all .5s;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.fullBlock {
+    height: 100vh;
+    /* height: 5000px; */
+    width: 100vw;
+}
+
+.header {
+    min-height: 150px;
+    font-size: 25pt;
+}
+
+/* .header p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0 5px;
+    background-color: pink;
+    clear: both;
+    float: left;
+    margin-top: 5px;
+} */
+
+.header span {
+    display: inline;
+    background-color: pink;
+    box-shadow: -5px 0 0 pink, 10px 0 0 pink;
+    line-height: 50px;
+}
+
+.secondaryBackground .header {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.textBlocks {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 11pt;
+    line-height: 23px;
+}
+
+.secondaryBackground .textBlocks {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 0;
+    max-width: 47vw;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.secondaryBackground .textBlocks p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.textBlocks p.topMargin {
+    margin-block-start: 50px;
+}
+
+.firstColl {
+    width: 368px;
+}
+
+.secondColl {
+    width: 600px;
+}
+
+.secondColl .row1 {
+    width: 368px;
+}
+
+.firstColl, .row1 {
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.row1 p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.row2 {
+    width: 600px;
+    opacity: .4;
+    font-weight: 300;
+    font-size: 10pt;
+}
+
+.withCodeSpacing {
+    margin-top: 30px;
+}
+
+.withCodeSpacing:first-child {
+    margin-top: 40px;
+}
+
+.subcommands {
+    display: flex;
+    flex-direction: row;
+    margin-top: -1em;
+}
+
+.subcommandsHeaders, .subcommandsDescriptions {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filler {
+    height: 1000px;
+}
+
+.slide2, .slide3 {
+    /* padding-left: 200px; */
+    padding-left: 10vw;
+}
+
+.video {
+    position: absolute;
+    transition: all .5s;
+}
+
+.video iframe {
+    width: 700px;
+    height: 394px;
+    position: relative;
+    left: 300px;
+    top: -150px;
+    transition: all .5s;
+}
+
+.slide5 {
+    padding-bottom: 400px;
+}
+
+.slide4 .textBlocks, .slide5 .textBlocks {
+    font-weight: 500;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+
+.slide4 .textBlocks p.topMargin {
+    margin-top: 30px;
+}
+
+.textBlocks p.topMargin:first-child {
+    margin-top: 0;
+}
+
+.crossedBackground {
+    background-image: url('./assets/crossedBackgroundSmall.png');
+    font-size: 14pt;
+    padding: 40px 60px 40px 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.afterCorssedPadding {
+    padding: 0 60px;
+}
+
+.textBlocks .afterCorssedPadding p {
+    margin-top: 30px;
+}
+.blackBackground {
+    float: left;
+    clear: both;
+    background-color: black;
+    color: white;
+}
+
+.blueLink {
+    color: #1717B0;
+    cursor: pointer;
+}
+
+.robonomicsLogoContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.robonomicsLogo {
+    width: 100px;
+    margin: 50px 50px 0 0;
+}
+
+
+@media screen and (max-width: 1650px) {
+    .slide4 .textBlocks, .slide5 .textBlocks {
+        max-width: 57vw;
+    }
+    @media screen and (max-width: 1150px) {
+        .video {
+            left: 0;
+            height: auto;
+        }
+        .video iframe {
+            left: 10vw;
+            max-width: 80vw;
+            transition: all .5s;
+        }
+        @media screen and (max-width: 550px) {
+            .mainBackground.slide1 {
+                height: auto;
+            }
+            div.textBlocks {
+                display: flex;
+                flex-direction: column;
+            }
+            .firstColl, .secondColl, .secondColl .row1 p {
+                width: auto;
+            }
+            .textBlocks .secondColl .row1 p {
+                padding-right: 50px;
+            }
+
+            .slide2 {
+                display: none;
+            }
+            .slide3 {
+                padding-top: 200px;
+            }
+        }
+    }
+}
+
+
+
+
