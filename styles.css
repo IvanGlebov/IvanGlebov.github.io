@@ -51,8 +51,7 @@ a {
 
 .header span {
     display: inline;
-    background-color: pink;
-    box-shadow: -5px 0 0 pink, 10px 0 0 pink;
+    font-weight: 900;
     line-height: 50px;
 }
 
